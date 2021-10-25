@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #4B4453;
+}
+
+#header {
+    margin: 50px;
+    border-width: 5px;
+    border-style: dashed;
+}
+
+#taskList {
+    margin: 50px;
+    border-style: dashed;
+}
+
+#task {
+    background-color: #C34A36;
+}
