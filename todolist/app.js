@@ -7,7 +7,7 @@ task.addEventListener('click', clear)
 function save(){
   // TASK SAVE TO LOCALSTORAGE
   let taskInput = document.querySelector('#taskInput').value
-  key = 'task'
+  let key = 0
   for(i=0; i<localStorage.length; i++){
     key = key + 1
   }
@@ -37,12 +37,12 @@ function clear(){
   let task = this.parentElement
   taskList.removeChild(task)
   // REMOVE FROM LOCALSTORAGE
-  let key = this.id
-  deleteTask = localStorage.removeItem(key)
+  let key = this.key
+  window.localStorage.removeItem(key)
 }
 
 function liner(){
-  // ALTERNATIVE
+  // LINE-THROUGH TASK
   let task = this
   task.style.textDecoration = 'line-through'
 }
